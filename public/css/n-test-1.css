@@ -1,0 +1,108 @@
+#frm1 {
+    width: 300px;
+    text-align: center;
+    padding: 25px;
+    margin: 15vh auto 0 auto;
+    background-color: rgb(37, 140, 203);
+    border-radius: 3px;
+    font-size: 15px;
+}
+#frm1 h1 {
+    background: none;
+    border-radius: 15px;
+    border: none;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+#frm1 button {
+    width: 130px;
+    padding: 15px;
+    text-align: center;
+    margin: 100px;
+    color: white;
+    background-color:rgb(0, 57, 164);
+    border: none;
+    border-radius: 4px;
+}
+#frm1 button:hover{
+    background-color: rgb(28, 171, 44); 
+    color: rgb(255, 255, 255); 
+    text-decoration: underline; 
+    transition: 1.5s; 
+    text-align: center;
+    animation-name: colorswaps;
+    animation-duration: infinite;
+    animation-direction: reverse;
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    background-color: white;
+    padding: 5px;
+}
+
+.input[type="submit"]{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.input-control input {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.success {
+    color: rgb(70, 183, 74);
+}
+.success input {
+    border-color: rgb(70, 183, 74);
+}
+.input-control .success input {
+    border-color: rgb(70, 183, 74);
+}
+.input-control .success {
+    border-color: rgb(70, 183, 74);
+    font-size: 9px;
+    height: 13px;
+}
+.input-control .errors input {
+    border-color: rgb(190, 84, 57);
+}
+.error {
+    color: red;
+}
+
+.error input {
+    border-color: rgb(190, 84, 57);
+}
+
+.input-control .error {
+    border-color: rgb(190, 84, 57);
+    font-size: 15px;
+    height: 13px;
+}
+
+.container {
+    padding: 0 16px;
+}
+.Rows {
+    width: fit-content;
+    margin: auto;
+}
+
+.container::after,.Rows::after{
+    content: " ";
+    clear: both;
+    display: table;
+}

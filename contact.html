@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!--link for reaching css-->
+<LINK href="css/n-test-1.css" rel="stylesheet" type="text/css">
+<head>
+    <title>Project Milestone #2 Form submission</title>
+</head>
+<!--username, email, and password are all together in container-->
+<body>
+    <div class="container">
+        <form id="frm1" method="post" action="/contact">
+            <div class="input-control">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" onfocus="this.value=''" value="Enter Username" required>
+                <div class="error"></div>
+                <div class="success"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="Email">Email:</label>
+                <input type="text" id="email" name="email" onfocus="this.value=''" value="Enter Email" required>
+                <div class="error"></div>
+                <div class="success"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" onfocus="this.value=''" value="Enter Password" required>
+            </div>
+        <!--submit button for all input data-->
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+    <script href="user_controller.js"></script>
+</body>
+</html>
+
